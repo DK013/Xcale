@@ -1,0 +1,19 @@
+{
+  "cwd": "D:\\Docs\\Personal\\Projects\\Node.JS\\Projects\\Xcale",
+  "type": [
+    "web"
+  ],
+  "name": "Xcale",
+  "pkg": "com.westenets.xcale",
+  "framework": "react",
+  "template": "blank",
+  "cssPreProcessor": false,
+  "bundler": "vite",
+  "theming": {
+    "customColor": true,
+    "color": "#038387",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

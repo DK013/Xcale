@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.device-cordova.device-ios {
+	height: 100vh;
+}
+:root {
+	--f7-page-master-width: 350px;
+    --toolbar-top-offset: 15px;
+    --f7-ios-primary: #1966cc !important;
+    --f7-ios-primary-shade: #2a3465 !important;
+    --f7-ios-primary-tint: #07d4d5 !important;
+    --f7-ios-primary-rgb: 25, 102, 204 !important;
+    --f7-page-content-extra-padding-top: 40px;
+}
+.ios {
+	--f7-navbar-height: 84px;
+    --f7-navbar-inner-padding-left: 20px;
+    --f7-tabbar-link-active-bg-color: var(--f7-theme-color);
+}
+
+.navbar,
+.page {
+	border: none !important;
+}
+.navbar-transparent:not(.navbar-large):not(.navbar-transparent-visible):not(.with-searchbar-expandable-enabled) .title {
+	opacity: 1;
+}
+.toolbar-top:after, .ios .toolbar-top-ios:after, .md .toolbar-top-md:after {
+    display: none;
+}
+.navbars ~ * .toolbar-top, .navbars ~ .page:not(.no-navbar) .toolbar-top {
+    top: calc(var(--f7-navbar-height) + var(--f7-safe-area-top) + var(--toolbar-top-offset));
+    left: calc(var(--f7-navbar-inner-padding-left) + var(--f7-safe-area-left));
+}
+.tabbar .tab-link-active, .tabbar-icons .tab-link-active {
+    color: #FFF !important;
+}
+.toolbar-inner {
+    padding: 0;
+}
